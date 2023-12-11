@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Dec 11 20:47:40 GMT 2023","Mon Dec 11 20:47:43 GMT 2023","2621","","","","","","Sunday isn't Friday",""
+"passed","Mon Dec 11 20:47:43 GMT 2023","Mon Dec 11 20:47:43 GMT 2023","833","","Is it Friday yet?","","Friday is Friday","","Friday is Friday","  Everybody wants to know when it's Friday"
+"passed","Mon Dec 11 20:47:43 GMT 2023","Mon Dec 11 20:47:43 GMT 2023","839","","","","","","Friday is Friday",""
+"passed","Mon Dec 11 20:47:40 GMT 2023","Mon Dec 11 20:47:43 GMT 2023","2489","","Is it Friday yet?","","Sunday isn't Friday","","Sunday isn't Friday","  Everybody wants to know when it's Friday"
