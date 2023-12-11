@@ -7,7 +7,7 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -32,7 +32,7 @@ public class Hello1StepDefinition {
     public void iShouldBeTold(String arg0) {
         driver.get("https://en.wikipedia.org/wiki/Wiki");
         String text = driver.findElement(By.className("mw-page-title-main")).getText();
-        Assertions.assertEquals("Wiki", text);
+        Assert.assertEquals("Wiki", text);
     }
 
     @Given("today is Friday")
