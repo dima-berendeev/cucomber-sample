@@ -32,7 +32,7 @@ public class Hello1StepDefinition {
     public void iShouldBeTold(String arg0) {
         driver.get("https://en.wikipedia.org/wiki/Wiki");
         String text = driver.findElement(By.className("mw-page-title-main")).getText();
-        Assertions.assertEquals("Wiki1", text);
+        Assertions.assertEquals("Wiki", text);
     }
 
     @Given("today is Friday")
