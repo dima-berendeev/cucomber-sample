@@ -7,9 +7,16 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class Hello1StepDefinition {
+    WebDriver driver;
 
+    public Hello1StepDefinition(DriverHolder driverHolder) {
+        driver = driverHolder.driver;
+    }
 
     @Given("today is Sunday")
     public void todayIsSunday() {
@@ -23,6 +30,9 @@ public class Hello1StepDefinition {
 
     @Then("I should be told {string}")
     public void iShouldBeTold(String arg0) {
+        driver.get("https://en.wikipedia.org/wiki/Wiki");
+        String text = driver.findElement(By.className("mw-page-title-main")).getText();
+        Assertions.assertEquals("Wiki1", text);
     }
 
     @Given("today is Friday")
