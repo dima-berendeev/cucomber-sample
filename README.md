@@ -1,1 +1,1 @@
-My documentation
+[Allure report] (https://dima-berendeev.github.io/cucumber-sample/) 
